@@ -31,31 +31,12 @@ Chinese-origin advantage dissolves under per-group stratification.
 
 ## Citation
 
-If you use this repository, please cite the paper:
-
-```bibtex
-@article{iconicgroupbias2026,
-  title   = {Iconic-Group Bias in Vision-Language Models: How Salience
-             Gradients Render Chinese Ethnic Minority Cultures Invisible},
-  author  = {[AUTHORS]},
-  journal = {AI \& Society},
-  year    = {2026},
-  doi     = {10.XXXX/XXXXXX}
-}
-```
-
-And cite the data deposit:
-
-```bibtex
-@dataset{iconicgroupbias_data,
-  title     = {Iconic-Group Bias in Vision-Language Models: predictions,
-               metrics, and salience snapshots},
-  author    = {[AUTHORS]},
-  year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX}
-}
-```
+The paper accompanying this repository is currently under peer review at
+*AI & Society*. Final citation guidance for both the article and the Zenodo
+data deposit will be added here once the article DOI and the Zenodo DOI are
+issued. In the meantime, please link to this repository
+(<https://github.com/TiandaSun/iconic_group_bias>) and to the Zenodo archive
+of the tagged release.
 
 ## Repository layout
 

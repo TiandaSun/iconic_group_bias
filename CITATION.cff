@@ -1,23 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this software or the accompanying data, please cite the paper and the Zenodo deposit below."
+message: "The paper accompanying this repository is currently under peer review at AI & Society. Final citation guidance (article DOI and Zenodo DOIs) will be added once issued."
 title: "Iconic-Group Bias in Vision-Language Models — code and data"
 type: software
 authors:
   - family-names: "[LAST]"
     given-names: "[FIRST]"
     affiliation: "[Department], [Institution]"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
-date-released: "2026-XX-XX"
-version: "1.0.0"
 license: MIT
-url: "https://github.com/[user]/vlm-iconic-group-bias"
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.YYYYYYY
-    description: "Zenodo archive of this code release"
-  - type: doi
-    value: 10.5281/zenodo.XXXXXXX
-    description: "Zenodo deposit of derived data (predictions, metrics, salience snapshot, ratings)"
+url: "https://github.com/TiandaSun/iconic_group_bias"
 keywords:
   - vision-language models
   - cultural bias
@@ -27,13 +17,3 @@ keywords:
   - VLM evaluation
   - AI fairness
   - benchmark
-preferred-citation:
-  type: article
-  title: "Iconic-Group Bias in Vision-Language Models: How Salience Gradients Render Chinese Ethnic Minority Cultures Invisible"
-  authors:
-    - family-names: "[LAST]"
-      given-names: "[FIRST]"
-  journal: "AI & Society"
-  year: 2026
-  doi: 10.XXXX/XXXXXX
-  url: "https://doi.org/10.XXXX/XXXXXX"
