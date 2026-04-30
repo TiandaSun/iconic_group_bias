@@ -1,0 +1,78 @@
+{
+  "n_total_ratings": 150,
+  "n_raters": 1,
+  "dimensions": [
+    "Rating_1to5",
+    "Accuracy_1to5",
+    "Completeness_1to5",
+    "Cultural_Depth_1to5"
+  ],
+  "scale_calibration": {
+    "UNKNOWN": {
+      "n_items": 150,
+      "per_dimension": {
+        "Rating_1to5": {
+          "n": 0,
+          "mean": null,
+          "std": null,
+          "median": null
+        },
+        "Accuracy_1to5": {
+          "n": 0,
+          "mean": null,
+          "std": null,
+          "median": null
+        },
+        "Completeness_1to5": {
+          "n": 0,
+          "mean": null,
+          "std": null,
+          "median": null
+        },
+        "Cultural_Depth_1to5": {
+          "n": 0,
+          "mean": null,
+          "std": null,
+          "median": null
+        }
+      }
+    }
+  },
+  "cross_rater_rank_correlation": {},
+  "per_rater_model_means": {
+    "UNKNOWN": {
+      "Rating_1to5": {
+        "claude-haiku-4.5": NaN,
+        "gpt-4o-mini": NaN,
+        "llama-3.2-vision-11b": NaN,
+        "qwen2-vl-7b": NaN,
+        "qwen2.5-vl-7b": NaN
+      },
+      "Accuracy_1to5": {
+        "claude-haiku-4.5": NaN,
+        "gpt-4o-mini": NaN,
+        "llama-3.2-vision-11b": NaN,
+        "qwen2-vl-7b": NaN,
+        "qwen2.5-vl-7b": NaN
+      },
+      "Completeness_1to5": {
+        "claude-haiku-4.5": NaN,
+        "gpt-4o-mini": NaN,
+        "llama-3.2-vision-11b": NaN,
+        "qwen2-vl-7b": NaN,
+        "qwen2.5-vl-7b": NaN
+      },
+      "Cultural_Depth_1to5": {
+        "claude-haiku-4.5": NaN,
+        "gpt-4o-mini": NaN,
+        "llama-3.2-vision-11b": NaN,
+        "qwen2-vl-7b": NaN,
+        "qwen2.5-vl-7b": NaN
+      }
+    }
+  },
+  "mean_shift_test": {
+    "note": "mean-shift test is only computed when exactly 2 raters"
+  },
+  "split_half_proxy": {}
+}

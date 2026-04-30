@@ -1,0 +1,11 @@
+true_A,true_B,P(A->B),P(B->A),asymmetry,asymmetry_direction,ratio_max_over_min
+Miao,Dong,0.1571,0.8392,0.682,Dong->Miao,5.34
+Miao,Yi,0.0162,0.705,0.6888,Yi->Miao,43.57
+Miao,Li,0.0007,0.7485,0.7478,Li->Miao,1121.81
+Miao,Tibetan,0.0012,0.1673,0.1662,Tibetan->Miao,143.31
+Dong,Yi,0.0225,0.1197,0.0971,Yi->Dong,5.31
+Dong,Li,0.0007,0.1378,0.1372,Li->Dong,206.54
+Dong,Tibetan,0.0015,0.0452,0.0437,Tibetan->Dong,30.08
+Yi,Li,0.0005,0.0908,0.0903,Li->Yi,181.67
+Yi,Tibetan,0.0142,0.1462,0.132,Tibetan->Yi,10.32
+Li,Tibetan,0.002,0.001,-0.001,Li->Tibetan,2.0

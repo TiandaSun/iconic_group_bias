@@ -1,0 +1,5 @@
+model,rho_zh_tokens_vs_acc,rho_en_tokens_vs_acc,zh_tokens_vary,en_tokens_vary
+qwen2-vl-7b,,0.671,False,True
+qwen2.5-vl-7b,,0.671,False,True
+llama-3.2-vision-11b,-0.289,0.671,True,True
+gpt-4o-mini,-0.289,0.783,True,True

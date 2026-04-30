@@ -1,0 +1,16 @@
+human,auto,spearman_rho,spearman_p,pearson_r,pearson_p,n
+Rating_1to5,char_len,0.141,0.0845,0.045,0.5806,150
+Rating_1to5,general_ctc,0.201,0.0136,0.317,0.0001,150
+Rating_1to5,general_ctc_per1k,-0.111,0.1756,-0.121,0.1389,150
+Rating_1to5,correct_ethnic_ctc,0.014,0.8624,0.003,0.9727,150
+Rating_1to5,correct_ethnic_ctc_per1k,0.016,0.8482,-0.031,0.7084,150
+Accuracy_1to5,char_len,-0.024,0.7752,-0.009,0.9149,150
+Accuracy_1to5,general_ctc,0.038,0.6417,0.123,0.1351,150
+Accuracy_1to5,general_ctc_per1k,-0.009,0.9088,-0.052,0.5276,150
+Accuracy_1to5,correct_ethnic_ctc,0.031,0.7095,0.013,0.8706,150
+Accuracy_1to5,correct_ethnic_ctc_per1k,0.033,0.6929,-0.005,0.953,150
+Cultural_Depth_1to5,char_len,0.369,0.0,0.238,0.0033,150
+Cultural_Depth_1to5,general_ctc,0.354,0.0,0.468,0.0,150
+Cultural_Depth_1to5,general_ctc_per1k,-0.277,0.0006,-0.269,0.0009,150
+Cultural_Depth_1to5,correct_ethnic_ctc,-0.011,0.8899,-0.004,0.9586,150
+Cultural_Depth_1to5,correct_ethnic_ctc_per1k,-0.012,0.8873,-0.049,0.5499,150

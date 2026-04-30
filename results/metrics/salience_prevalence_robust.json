@@ -1,0 +1,174 @@
+{
+  "method": "Exact permutation Spearman; Holm correction across proxies; log-linear model logit(acc) ~ log(prevalence); jackknife LOO",
+  "n_groups": 5,
+  "per_proxy": {
+    "bytes_en": {
+      "spearman_rho": 0.7,
+      "p_one_tailed_greater_exact": 0.11666666666666667,
+      "p_two_tailed_exact": 0.23333333333333334,
+      "loglinear": {
+        "alpha": -54.623509042795284,
+        "beta": 4.2667094781176695,
+        "r2": 0.6029100821221514,
+        "r2_loo": -0.033976950593267885,
+        "pearson_r_log_logit": 0.7764728469960506,
+        "pearson_p_log_logit": 0.12251898800822679,
+        "n": 5
+      },
+      "jackknife": {
+        "Miao": 1.0,
+        "Dong": 0.39999999999999997,
+        "Yi": 0.7999999999999999,
+        "Li": 0.39999999999999997,
+        "Tibetan": 0.7999999999999999,
+        "min": 0.39999999999999997,
+        "max": 1.0,
+        "full": 0.7
+      },
+      "holm_adjusted": {
+        "one_tailed": 0.35,
+        "two_tailed": 0.7
+      }
+    },
+    "bytes_zh": {
+      "spearman_rho": 0.9999999999999999,
+      "p_one_tailed_greater_exact": 0.008333333333333333,
+      "p_two_tailed_exact": 0.016666666666666666,
+      "loglinear": {
+        "alpha": -64.29736739805625,
+        "beta": 4.900566072814895,
+        "r2": 0.8953283794260647,
+        "r2_loo": 0.7748327157189541,
+        "pearson_r_log_logit": 0.9462179344242342,
+        "pearson_p_log_logit": 0.014850980786962589,
+        "n": 5
+      },
+      "jackknife": {
+        "Miao": 1.0,
+        "Dong": 1.0,
+        "Yi": 1.0,
+        "Li": 1.0,
+        "Tibetan": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "full": 0.9999999999999999
+      },
+      "holm_adjusted": {
+        "one_tailed": 0.05,
+        "two_tailed": 0.1
+      }
+    },
+    "images_en": {
+      "spearman_rho": 0.4472135954999579,
+      "p_one_tailed_greater_exact": 0.25,
+      "p_two_tailed_exact": 0.5,
+      "loglinear": {
+        "alpha": -1.6710248983447644,
+        "beta": 0.4215276195954323,
+        "r2": 0.16100605439207405,
+        "r2_loo": -1.4177913443071977,
+        "pearson_r_log_logit": 0.4012555973342602,
+        "pearson_p_log_logit": 0.5031668031222147,
+        "n": 5
+      },
+      "jackknife": {
+        "Miao": 0.2581988897471611,
+        "Dong": 0.21081851067789195,
+        "Yi": 0.7745966692414834,
+        "Li": 0.21081851067789195,
+        "Tibetan": 0.7378647873726218,
+        "min": 0.21081851067789195,
+        "max": 0.7745966692414834,
+        "full": 0.4472135954999579
+      },
+      "holm_adjusted": {
+        "one_tailed": 0.35,
+        "two_tailed": 0.7
+      }
+    },
+    "images_zh": {
+      "spearman_rho": 0.9999999999999999,
+      "p_one_tailed_greater_exact": 0.008333333333333333,
+      "p_two_tailed_exact": 0.016666666666666666,
+      "loglinear": {
+        "alpha": -10.223496212069806,
+        "beta": 2.6011161452382465,
+        "r2": 0.8673810783238329,
+        "r2_loo": 0.702603391342542,
+        "pearson_r_log_logit": 0.9313329578211185,
+        "pearson_p_log_logit": 0.021376265035945214,
+        "n": 5
+      },
+      "jackknife": {
+        "Miao": 1.0,
+        "Dong": 1.0,
+        "Yi": 1.0,
+        "Li": 1.0,
+        "Tibetan": 1.0,
+        "min": 1.0,
+        "max": 1.0,
+        "full": 0.9999999999999999
+      },
+      "holm_adjusted": {
+        "one_tailed": 0.05,
+        "two_tailed": 0.1
+      }
+    },
+    "views_60d_en": {
+      "spearman_rho": 0.7999999999999999,
+      "p_one_tailed_greater_exact": 0.06666666666666667,
+      "p_two_tailed_exact": 0.13333333333333333,
+      "loglinear": {
+        "alpha": -9.47459955004678,
+        "beta": 0.9376273454225498,
+        "r2": 0.4688354636154548,
+        "r2_loo": -0.5703951279936026,
+        "pearson_r_log_logit": 0.6847156078368998,
+        "pearson_p_log_logit": 0.20216184731249406,
+        "n": 5
+      },
+      "jackknife": {
+        "Miao": 0.6000000000000001,
+        "Dong": 0.7999999999999999,
+        "Yi": 0.7999999999999999,
+        "Li": 0.7999999999999999,
+        "Tibetan": 0.7999999999999999,
+        "min": 0.6000000000000001,
+        "max": 0.7999999999999999,
+        "full": 0.7999999999999999
+      },
+      "holm_adjusted": {
+        "one_tailed": 0.26666666666666666,
+        "two_tailed": 0.5333333333333333
+      }
+    },
+    "views_60d_zh": {
+      "spearman_rho": 0.7,
+      "p_one_tailed_greater_exact": 0.11666666666666667,
+      "p_two_tailed_exact": 0.23333333333333334,
+      "loglinear": {
+        "alpha": -13.091150015740103,
+        "beta": 1.3763150235629986,
+        "r2": 0.31310218429788494,
+        "r2_loo": -1.6806407816740867,
+        "pearson_r_log_logit": 0.5595553451606774,
+        "pearson_p_log_logit": 0.32670791123946624,
+        "n": 5
+      },
+      "jackknife": {
+        "Miao": 0.7999999999999999,
+        "Dong": 0.39999999999999997,
+        "Yi": 1.0,
+        "Li": 0.39999999999999997,
+        "Tibetan": 0.7999999999999999,
+        "min": 0.39999999999999997,
+        "max": 1.0,
+        "full": 0.7
+      },
+      "holm_adjusted": {
+        "one_tailed": 0.35,
+        "two_tailed": 0.7
+      }
+    }
+  }
+}

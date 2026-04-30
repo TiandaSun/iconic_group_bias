@@ -1,0 +1,36 @@
+DESCRIPTION QUALITY EVALUATION GUIDELINES
+Generated: 2026-03-19 12:40
+============================================================
+
+TASK:
+Rate each costume description on a scale of 1-5.
+
+STEPS:
+1. View the image at the given Image_Path
+2. Read the model-generated Description
+3. Rate overall quality (Rating_1to5): 1=poor, 5=excellent
+4. Rate sub-aspects: Accuracy, Completeness, Cultural_Depth
+5. Add any notes in the Notes column
+
+RATING RUBRIC:
+------------------------------------------------------------
+Overall Quality (1-5):
+  1 = Poor: Major errors, irrelevant content, or very superficial
+  2 = Below Average: Several inaccuracies or missing key aspects
+  3 = Average: Adequate description with some gaps
+  4 = Good: Accurate and reasonably comprehensive
+  5 = Excellent: Accurate, comprehensive, and culturally insightful
+
+Accuracy (1-5):
+  1 = Major factual errors  ->  5 = Completely accurate
+
+Completeness (1-5):
+  Aspects: style, patterns, materials, accessories, occasions
+  1 = Covers 1 aspect  ->  5 = Covers all 5 aspects
+
+Cultural Depth (1-5):
+  1 = No cultural context  ->  5 = Expert-level cultural knowledge
+
+IMPORTANT:
+- Focus on factual accuracy about the costume
+- Do not penalize for language style, only content quality

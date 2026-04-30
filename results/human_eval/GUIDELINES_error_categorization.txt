@@ -1,0 +1,40 @@
+ERROR CATEGORIZATION GUIDELINES
+Generated: 2026-03-19 12:40
+============================================================
+
+TASK:
+Categorize why the model misclassified each costume image.
+
+ERROR CATEGORIES:
+------------------------------------------------------------
+  VS - Visual Similarity
+       The two ethnic groups have visually similar costume features
+
+  RV - Regional Variation
+       Sub-regional variations within an ethnic group cause confusion
+
+  AF - Accessory Focus
+       Model over-relies on accessories rather than overall costume
+
+  CP - Color/Pattern Error
+       Misinterpretation of color schemes or pattern motifs
+
+  IV - Incomplete Visibility
+       Key costume features not fully visible in image
+
+  MA - Modern Adaptation
+       Modern or adapted costumes cause confusion
+
+  KG - Knowledge Gap
+       Model lacks specific cultural knowledge to distinguish
+
+  OT - Other
+       Does not fit above categories (explain in Notes)
+
+STEPS:
+1. View the image at the given Image_Path
+2. Note True_Label vs Predicted_Label
+3. Select primary Error_Type code (VS/RV/AF/CP/IV/MA/KG/OT)
+4. Optionally add Secondary_Type
+5. Rate Confidence: High / Medium / Low
+6. Add explanatory Notes

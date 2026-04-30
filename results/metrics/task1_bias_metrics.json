@@ -1,0 +1,148 @@
+{
+  "chinese_models": [
+    "qwen2-vl-7b",
+    "qwen2.5-vl-7b"
+  ],
+  "western_models": [
+    "claude-haiku-4.5",
+    "gpt-4o-mini",
+    "llama-3.2-vision-11b"
+  ],
+  "obi_by_language": {
+    "zh": {
+      "chinese_mean_acc": 0.3875,
+      "western_mean_acc": 0.3587777777777778,
+      "overall_mean_acc": 0.37026666666666663,
+      "obi": 0.07757172008162282
+    },
+    "en": {
+      "chinese_mean_acc": 0.4038333333333333,
+      "western_mean_acc": 0.3016666666666667,
+      "overall_mean_acc": 0.3425333333333333,
+      "obi": 0.29826780848579204
+    },
+    "combined": {
+      "chinese_mean_acc": 0.3956666666666667,
+      "western_mean_acc": 0.33022222222222225,
+      "overall_mean_acc": 0.35640000000000005,
+      "obi": 0.1836263873300911
+    }
+  },
+  "obi_by_ethnic_group_pooled": {
+    "Miao": {
+      "chinese_mean_acc": 0.8616666666666667,
+      "western_mean_acc": 0.7991666666666667,
+      "obi": 0.07583417593528818
+    },
+    "Dong": {
+      "chinese_mean_acc": 0.11791666666666667,
+      "western_mean_acc": 0.14805555555555558,
+      "obi": -0.2216094771241832
+    },
+    "Yi": {
+      "chinese_mean_acc": 0.08750000000000001,
+      "western_mean_acc": 0.20944444444444443,
+      "obi": -0.7589903181189487
+    },
+    "Li": {
+      "chinese_mean_acc": 0.03666666666666667,
+      "western_mean_acc": 0.01027777777777778,
+      "obi": 1.2666666666666664
+    },
+    "Tibetan": {
+      "chinese_mean_acc": 0.8745833333333333,
+      "western_mean_acc": 0.4841666666666666,
+      "obi": 0.6097084851639771
+    }
+  },
+  "les_per_model": {
+    "claude-haiku-4.5": {
+      "origin": "western",
+      "acc_zh": 0.33,
+      "acc_en": 0.284,
+      "les": 0.16197183098591564
+    },
+    "gpt-4o-mini": {
+      "origin": "western",
+      "acc_zh": 0.368,
+      "acc_en": 0.35133333333333333,
+      "les": 0.047438330170777976
+    },
+    "llama-3.2-vision-11b": {
+      "origin": "western",
+      "acc_zh": 0.37833333333333335,
+      "acc_en": 0.26966666666666667,
+      "les": 0.4029666254635353
+    },
+    "qwen2-vl-7b": {
+      "origin": "chinese",
+      "acc_zh": 0.381,
+      "acc_en": 0.413,
+      "les": -0.07748184019370453
+    },
+    "qwen2.5-vl-7b": {
+      "origin": "chinese",
+      "acc_zh": 0.394,
+      "acc_en": 0.39466666666666667,
+      "les": -0.0016891891891891437
+    }
+  },
+  "fairness_cv": {
+    "claude-haiku-4.5|zh": {
+      "mean": 0.32999999999999996,
+      "std": 0.1756258649642599,
+      "cv": 0.5321995908007876
+    },
+    "claude-haiku-4.5|en": {
+      "mean": 0.28400000000000003,
+      "std": 0.21518622425961917,
+      "cv": 0.7576979727451378
+    },
+    "gpt-4o-mini|zh": {
+      "mean": 0.368,
+      "std": 0.426711455982455,
+      "cv": 1.1595419999523235
+    },
+    "gpt-4o-mini|en": {
+      "mean": 0.3513333333333334,
+      "std": 0.4027190915100334,
+      "cv": 1.1462592737477229
+    },
+    "llama-3.2-vision-11b|zh": {
+      "mean": 0.3783333333333333,
+      "std": 0.3182277311751584,
+      "cv": 0.8411305669827976
+    },
+    "llama-3.2-vision-11b|en": {
+      "mean": 0.26966666666666667,
+      "std": 0.3869918173122872,
+      "cv": 1.4350747242730058
+    },
+    "qwen2-vl-7b|zh": {
+      "mean": 0.38099999999999995,
+      "std": 0.4022224370779045,
+      "cv": 1.055701934587676
+    },
+    "qwen2-vl-7b|en": {
+      "mean": 0.413,
+      "std": 0.4383217995947726,
+      "cv": 1.0613118634255996
+    },
+    "qwen2.5-vl-7b|zh": {
+      "mean": 0.394,
+      "std": 0.3228167694941925,
+      "cv": 0.8193319022695241
+    },
+    "qwen2.5-vl-7b|en": {
+      "mean": 0.39466666666666667,
+      "std": 0.4498794900365603,
+      "cv": 1.1398973565115549
+    }
+  },
+  "notes": {
+    "obi_definition": "(mean_acc_chinese_models - mean_acc_western_models) / mean_acc_all",
+    "les_definition": "(acc_chinese_prompt - acc_english_prompt) / acc_english_prompt",
+    "model_naming": "As of 2026-04-24 all Task 1 raw files carry their real model names. Pre-revision runs used claude-3.5-sonnet for Claude Task 1 (n=500); those have been archived in results/raw/archive_old_api_n500/.",
+    "unbalanced_warning": "OBI computed over 2 chinese vs 3 western models; interpret with care."
+  }
+}

@@ -1,0 +1,140 @@
+# Prompt Templates for VLM Evaluation
+# Two tasks: Classification (Task 1) and Cultural Description (Task 2)
+# Each task has Chinese (zh) and English (en) versions
+
+task1_classification:
+  description: "Classify the ethnic group based on traditional costume"
+
+  zh: |
+    请仔细观察图片中人物所穿的传统民族服饰，判断该服饰属于以下哪个中国少数民族：
+
+    A) 苗族
+    B) 侗族
+    C) 彝族
+    D) 黎族
+    E) 藏族
+
+    请仅输出一个字母（A、B、C、D或E）作为答案，不要输出其他任何内容。
+
+  en: |
+    Carefully observe the traditional ethnic costume worn by the person in the image. Determine which of the following Chinese ethnic minorities this costume belongs to:
+
+    A) Miao
+    B) Dong
+    C) Yi
+    D) Li
+    E) Tibetan
+
+    Output ONLY a single letter (A, B, C, D, or E) as your answer. Do not include any other text.
+
+  # Mapping from letter to ethnic group
+  label_mapping:
+    A: "Miao"
+    B: "Dong"
+    C: "Yi"
+    D: "Li"
+    E: "Tibetan"
+
+  # Expected output format
+  output_format: "single_letter"
+  valid_outputs: ["A", "B", "C", "D", "E"]
+
+  # Templates used by scripts/run_classification_shuffled.py (C3 sanity
+  # check for MCQ-option-order positional bias). Option list is injected
+  # via {options} with a per-image shuffled letter-to-class mapping.
+  zh_template: |
+    请仔细观察图片中人物所穿的传统民族服饰，判断该服饰属于以下哪个中国少数民族：
+
+    {options}
+
+    请仅输出一个字母（A、B、C、D或E）作为答案，不要输出其他任何内容。
+
+  en_template: |
+    Carefully observe the traditional ethnic costume worn by the person in the image. Determine which of the following Chinese ethnic minorities this costume belongs to:
+
+    {options}
+
+    Output ONLY a single letter (A, B, C, D, or E) as your answer. Do not include any other text.
+
+  class_names:
+    zh:
+      Miao: "苗族"
+      Dong: "侗族"
+      Yi: "彝族"
+      Li: "黎族"
+      Tibetan: "藏族"
+    en:
+      Miao: "Miao"
+      Dong: "Dong"
+      Yi: "Yi"
+      Li: "Li"
+      Tibetan: "Tibetan"
+
+task2_description:
+  description: "Generate detailed cultural description of the costume"
+
+  zh: |
+    请详细描述图片中展示的传统民族服饰。在描述中，请涵盖以下方面：
+
+    1. 服饰的整体风格和色彩特征
+    2. 主要的图案纹样及其文化含义
+    3. 服饰的材质和制作工艺（如刺绣、蜡染、织锦等）
+    4. 配饰特点（如银饰、头饰、腰带等）
+    5. 该服饰可能的用途（日常穿着、节日盛装、婚嫁礼服等）
+
+    请用专业、详细的语言进行描述，体现对该民族服饰文化的理解。
+
+  en: |
+    Please provide a detailed description of the traditional ethnic costume shown in the image. Your description should cover the following aspects:
+
+    1. Overall style and color characteristics of the costume
+    2. Main patterns and motifs along with their cultural significance
+    3. Materials and craftsmanship techniques (such as embroidery, batik, brocade, etc.)
+    4. Accessory features (such as silver ornaments, headdress, belt, etc.)
+    5. Possible occasions for wearing this costume (daily wear, festival attire, wedding dress, etc.)
+
+    Please use professional and detailed language that demonstrates understanding of the ethnic costume culture.
+
+  # Expected output format
+  output_format: "free_text"
+  min_length: 100
+  max_length: 1000
+
+# C4 sanity check: Task 2 with NEUTRAL craft-technique language.
+# Removes the Miao-coded seed words (embroidery/batik/brocade, silver
+# ornaments/headdress/belt, daily wear/festival/wedding) so any
+# Dong->Miao in-text confusion observed in results cannot be an
+# artefact of prompt vocabulary.
+task2_description_neutral:
+  description: "Task 2 with generic technique / accessory / occasion language"
+
+  zh: |
+    请详细描述图片中展示的传统民族服饰。在描述中，请涵盖以下方面：
+
+    1. 服饰的整体风格和色彩特征
+    2. 主要的图案纹样及其文化含义
+    3. 服饰的材质和制作工艺
+    4. 配饰特点
+    5. 该服饰可能的穿着场合
+
+    请用专业、详细的语言进行描述，体现对该民族服饰文化的理解。
+
+  en: |
+    Please provide a detailed description of the traditional ethnic costume shown in the image. Your description should cover the following aspects:
+
+    1. Overall style and colour characteristics of the costume
+    2. Main patterns and motifs along with their cultural significance
+    3. Materials and craftsmanship techniques
+    4. Accessory features
+    5. Likely occasions for wearing this costume
+
+    Please use professional and detailed language that demonstrates understanding of the ethnic costume culture.
+
+  output_format: "free_text"
+  min_length: 100
+  max_length: 1000
+
+# System prompts (optional, for models that support them)
+system_prompts:
+  zh: "你是一位中国少数民族服饰文化专家，擅长识别和分析各民族的传统服饰特征。"
+  en: "You are an expert in Chinese ethnic minority costume culture, skilled at identifying and analyzing traditional costume characteristics of various ethnic groups."

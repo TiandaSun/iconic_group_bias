@@ -1,0 +1,229 @@
+{
+  "statistics": {
+    "n_images_indexed": 3000,
+    "n_images_exist": 3000,
+    "by_group": {
+      "Dong": 600,
+      "Li": 600,
+      "Miao": 600,
+      "Tibetan": 600,
+      "Yi": 600
+    },
+    "formats": {
+      "JPEG": 2999,
+      "PNG": 1
+    },
+    "resolutions": {
+      "min_w": 60,
+      "max_w": 5472,
+      "min_h": 60,
+      "max_h": 4864
+    },
+    "file_bytes": {
+      "mean": 113072.78933333333,
+      "min": 1410,
+      "max": 2467150
+    }
+  },
+  "duplicates": {
+    "exact_duplicates": {
+      "f67eb64927007532db69407c872fbc13cc3d696c5aeaa45df73339407e3bcb8a": [
+        "Li_0307",
+        "Li_0308"
+      ]
+    },
+    "near_duplicates": [
+      {
+        "cluster": [
+          "Dong_0397",
+          "Dong_0419"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Dong"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Li_0060",
+          "Li_0085",
+          "Li_0193"
+        ],
+        "size": 3,
+        "groups_in_cluster": [
+          "Li"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Li_0123",
+          "Li_0158"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Li"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Li_0307",
+          "Li_0308"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Li"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Li_0310",
+          "Li_0383"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Li"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Li_0425",
+          "Li_0544"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Li"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Li_0547",
+          "Li_0582"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Li"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Miao_0025",
+          "Miao_0334"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Miao"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Miao_0120",
+          "Miao_0129"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Miao"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Tibetan_0002",
+          "Tibetan_0407"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Tibetan"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Tibetan_0034",
+          "Tibetan_0053"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Tibetan"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Tibetan_0115",
+          "Tibetan_0269"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Tibetan"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Tibetan_0289",
+          "Tibetan_0311"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Tibetan"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Tibetan_0361",
+          "Tibetan_0469"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Tibetan"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Yi_0136",
+          "Yi_0279"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Yi"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Yi_0166",
+          "Yi_0293"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Yi"
+        ],
+        "cross_group": false
+      },
+      {
+        "cluster": [
+          "Yi_0368",
+          "Yi_0379"
+        ],
+        "size": 2,
+        "groups_in_cluster": [
+          "Yi"
+        ],
+        "cross_group": false
+      }
+    ],
+    "exact_dup_n_clusters": 1,
+    "near_dup_n_clusters": 17,
+    "near_dup_cross_group_count": 0
+  }
+}

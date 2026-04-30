@@ -1,0 +1,140 @@
+# Evaluation Configuration
+# Defines ethnic groups, metrics, and human evaluation settings
+
+# Target ethnic groups in the dataset
+ethnic_groups:
+  - Miao
+  - Dong
+  - Yi
+  - Li
+  - Tibetan
+
+# Chinese names for reference
+ethnic_groups_zh:
+  Miao: "苗族"
+  Dong: "侗族"
+  Yi: "彝族"
+  Li: "黎族"
+  Tibetan: "藏族"
+
+# Dataset statistics
+dataset:
+  total_images: 3000
+  images_per_group: 600
+  prompt_languages: ["zh", "en"]
+
+# Inference counts
+inference_counts:
+  task1_classification:
+    per_model: 6000  # 3000 images × 2 languages
+    total: 42000     # 6000 × 7 models
+  task2_description:
+    per_model: 1000  # Subset for description task
+    total: 7000      # 1000 × 7 models
+
+# Evaluation metrics
+metrics:
+  classification:
+    - accuracy           # Overall accuracy
+    - macro_f1          # Macro-averaged F1 score
+    - per_class_accuracy # Accuracy per ethnic group
+    - confusion_matrix  # Full confusion matrix
+
+  bias_analysis:
+    - obi               # Origin Bias Index
+    - les               # Language Effect Score
+
+  description_quality:
+    - cultural_term_coverage  # Coverage of cultural vocabulary
+
+# Metric formulas (for reference)
+metric_formulas:
+  obi:
+    name: "Origin Bias Index"
+    formula: "(mean_acc_chinese_models - mean_acc_western_models) / mean_acc_all"
+    description: "Measures performance gap between Chinese-origin and Western-origin VLMs"
+    interpretation:
+      positive: "Chinese-origin models perform better"
+      negative: "Western-origin models perform better"
+      zero: "No origin-based performance difference"
+
+  les:
+    name: "Language Effect Score"
+    formula: "(acc_chinese_prompt - acc_english_prompt) / acc_english_prompt"
+    description: "Measures how prompt language affects model performance"
+    interpretation:
+      positive: "Chinese prompts lead to better performance"
+      negative: "English prompts lead to better performance"
+      zero: "No language effect"
+
+  cultural_term_coverage:
+    name: "Cultural Term Coverage"
+    formula: "matched_terms / total_vocabulary_terms"
+    description: "Measures coverage of domain-specific cultural terminology"
+
+# Human evaluation configuration
+human_eval:
+  # Number of samples for each evaluation type
+  samples:
+    description_quality: 50    # Rate quality of generated descriptions
+    error_categorization: 30   # Categorize classification errors
+    metric_validation: 20      # Validate automated metrics
+
+  # Description quality rubric (1-5 scale)
+  description_rubric:
+    accuracy:
+      description: "Factual correctness of costume description"
+      levels:
+        1: "Major factual errors"
+        2: "Several inaccuracies"
+        3: "Mostly accurate with minor errors"
+        4: "Accurate with negligible issues"
+        5: "Completely accurate"
+
+    completeness:
+      description: "Coverage of required description aspects"
+      levels:
+        1: "Covers 1 aspect"
+        2: "Covers 2 aspects"
+        3: "Covers 3 aspects"
+        4: "Covers 4 aspects"
+        5: "Covers all 5 aspects"
+
+    cultural_depth:
+      description: "Depth of cultural understanding demonstrated"
+      levels:
+        1: "No cultural context"
+        2: "Superficial cultural mentions"
+        3: "Basic cultural understanding"
+        4: "Good cultural insight"
+        5: "Expert-level cultural knowledge"
+
+  # Error categories for misclassification analysis
+  error_categories:
+    - "Similar visual features"
+    - "Regional variation confusion"
+    - "Accessory-based misidentification"
+    - "Color/pattern misinterpretation"
+    - "Incomplete costume visibility"
+    - "Modern adaptation confusion"
+    - "Other"
+
+# Statistical tests
+statistical_tests:
+  - name: "McNemar's test"
+    purpose: "Compare paired model performances"
+  - name: "Chi-square test"
+    purpose: "Test independence of errors across groups"
+  - name: "Kruskal-Wallis test"
+    purpose: "Compare description quality scores"
+  - name: "Bootstrap confidence intervals"
+    purpose: "Estimate metric uncertainty"
+    n_bootstrap: 1000
+    confidence_level: 0.95
+
+# Output settings
+output:
+  results_dir: "results"
+  save_format: "json"
+  save_intermediate: true
+  checkpoint_interval: 100  # Save checkpoint every N images

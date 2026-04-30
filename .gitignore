@@ -1,0 +1,155 @@
+# =============================================================================
+# Iconic-Group Bias VLM repo — .gitignore
+# =============================================================================
+# This file is intentionally aggressive about excluding (a) secrets, (b) the
+# raw 3,000-image corpus that we deliberately do not redistribute, and (c)
+# build / cache artefacts. Anything inside `results/raw/`, `results/metrics/`,
+# `data/metadata.csv`, etc. is meant to be checked in.
+
+# -----------------------------------------------------------------------------
+# Secrets — must never be committed
+# -----------------------------------------------------------------------------
+Keys/
+*.env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+api_keys.json
+credentials.json
+.openai_key
+.anthropic_key
+.hf_token
+
+# -----------------------------------------------------------------------------
+# Source images — copyright reasons, NOT redistributed
+# -----------------------------------------------------------------------------
+data/服饰2/
+data/民族服饰/
+data/images/
+data/raw_images/
+human_eval/images/
+results/human_eval/images/
+
+# Bulk image archives that should never be committed
+*.zip
+!evaluation_package.zip
+!human_eval_package.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# -----------------------------------------------------------------------------
+# HuggingFace / model caches
+# -----------------------------------------------------------------------------
+hf_cache/
+cache/
+.cache/
+~/.cache/huggingface/
+*/cache/huggingface/
+
+# -----------------------------------------------------------------------------
+# LaTeX build artefacts (paper sources are in a separate repo, but if anyone
+# rebuilds the paper from this repo, exclude artefacts)
+# -----------------------------------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.run.xml
+paper/main.log
+paper/build*.log
+paper/build_bib.log
+paper/main.aux
+paper/main.bbl
+paper/main.blg
+paper/main.out
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -----------------------------------------------------------------------------
+# SLURM / HPC outputs (kept for the working project, not for the public repo)
+# -----------------------------------------------------------------------------
+*.err
+*.log
+slurm-*.out
+slurm-*.err
+*-*.err
+*-*.log
+!CHANGELOG.log
+
+# -----------------------------------------------------------------------------
+# IDE / editor noise
+# -----------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+~*
+
+# -----------------------------------------------------------------------------
+# Internal planning / review docs (not for public release)
+# -----------------------------------------------------------------------------
+paper/systematic_review/
+paper/deep_dive_proposed_edits.md
+paper/STORYLINE.md
+paper/WRITING_PLAN.md
+paper/README.md
+docs/internal/
+*_internal.md
+TODO.md
+NOTES.md
+
+# -----------------------------------------------------------------------------
+# Archive of older runs (n=500 API era)
+# -----------------------------------------------------------------------------
+archive/
+archive_old_*/
+results/raw/archive/
+results/raw/archive_old_*/
+
+# -----------------------------------------------------------------------------
+# Misc
+# -----------------------------------------------------------------------------
+*.docx
+*.doc
+~$*
+.history/

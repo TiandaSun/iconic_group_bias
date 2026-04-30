@@ -1,0 +1,9 @@
+{
+  "pooled_pearson_r": 0.6590062057325599,
+  "pooled_p_value": 0.0,
+  "n_obs_pooled": 30000,
+  "r2_group_only": 0.435,
+  "r2_group_plus_iconicness": 0.4586,
+  "r2_marginal_from_iconicness": 0.0236,
+  "iconicness_coef_OLS": 0.4686
+}

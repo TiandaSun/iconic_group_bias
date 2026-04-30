@@ -1,0 +1,249 @@
+# Cultural Vocabulary for Chinese Minority Costume Evaluation
+# Used for calculating Cultural Term Coverage metric
+
+# Chinese vocabulary (simplified Chinese)
+zh:
+  # General costume terms
+  - 刺绣
+  - 蜡染
+  - 织锦
+  - 挑花
+  - 银饰
+  - 头饰
+  - 百褶裙
+  - 盛装
+  - 便装
+  - 礼服
+
+  # Embroidery techniques
+  - 盘绣
+  - 锁绣
+  - 打籽绣
+  - 贴布绣
+  - 十字绣
+  - 平绣
+  - 堆绣
+  - 辫绣
+  - 马尾绣
+  - 破线绣
+
+  # Dyeing techniques
+  - 蓝靛
+  - 靛蓝
+  - 枫香染
+  - 扎染
+  - 蜡防染
+  - 植物染
+
+  # Materials
+  - 棉布
+  - 麻布
+  - 丝绸
+  - 蚕丝
+  - 银片
+  - 银泡
+  - 银丝
+  - 铜片
+  - 亮片
+
+  # Patterns and motifs
+  - 龙纹
+  - 凤纹
+  - 蝴蝶纹
+  - 牛角纹
+  - 太阳纹
+  - 几何纹
+  - 铜鼓纹
+  - 鱼纹
+  - 花卉纹
+  - 水波纹
+  - 漩涡纹
+  - 菱形纹
+  - 回纹
+  - 云纹
+  - 鸟纹
+  - 蛙纹
+  - 蜘蛛纹
+
+  # Colors
+  - 靛蓝
+  - 朱红
+  - 明黄
+  - 藏青
+  - 黑色
+  - 白色
+  - 红色
+  - 蓝色
+  - 绿色
+  - 紫色
+  - 银色
+
+  # Silver accessories
+  - 项圈
+  - 手镯
+  - 耳环
+  - 发簪
+  - 银冠
+  - 银梳
+  - 银链
+  - 银角
+  - 银铃
+  - 银花
+  - 银牌
+  - 银锁
+
+  # Garment parts
+  - 衣襟
+  - 袖口
+  - 领口
+  - 下摆
+  - 裙边
+  - 围腰
+  - 腰带
+  - 绑腿
+  - 衣袖
+  - 前襟
+  - 后摆
+
+  # Cultural elements
+  - 图腾
+  - 吉祥
+  - 祝福
+  - 祈福
+  - 避邪
+  - 传统
+  - 民族
+  - 手工
+  - 传承
+  - 文化符号
+
+# English vocabulary
+en:
+  # General costume terms
+  - embroidery
+  - batik
+  - brocade
+  - cross-stitch
+  - silver ornament
+  - headdress
+  - pleated skirt
+  - festival costume
+  - ceremonial dress
+  - traditional attire
+
+  # Embroidery techniques
+  - coiling stitch
+  - chain stitch
+  - satin stitch
+  - applique
+  - counted stitch
+  - flat stitch
+  - braided embroidery
+  - horse tail embroidery
+  - split thread embroidery
+
+  # Dyeing techniques
+  - indigo dyeing
+  - wax-resist dyeing
+  - tie-dye
+  - plant dye
+  - natural dye
+
+  # Materials
+  - cotton
+  - linen
+  - silk
+  - hemp
+  - silver
+  - thread
+  - sequin
+  - bead
+
+  # Patterns and motifs
+  - dragon pattern
+  - phoenix pattern
+  - butterfly motif
+  - horn pattern
+  - sun motif
+  - geometric pattern
+  - bronze drum pattern
+  - fish pattern
+  - floral pattern
+  - wave pattern
+  - spiral pattern
+  - diamond pattern
+  - cloud pattern
+  - bird motif
+  - frog motif
+
+  # Colors
+  - indigo blue
+  - vermillion
+  - bright yellow
+  - navy blue
+  - black
+  - white
+  - red
+  - blue
+  - green
+  - purple
+  - silver
+
+  # Silver accessories
+  - necklace
+  - bracelet
+  - earring
+  - hairpin
+  - silver crown
+  - silver comb
+  - silver chain
+  - silver horn
+  - silver bell
+  - silver flower
+  - silver lock
+
+  # Garment parts
+  - collar
+  - sleeve
+  - cuff
+  - hem
+  - waistband
+  - apron
+  - belt
+  - legging
+  - bodice
+  - front panel
+
+  # Cultural elements
+  - totem
+  - auspicious
+  - blessing
+  - protection
+  - traditional
+  - ethnic
+  - handmade
+  - heritage
+  - cultural symbol
+  - craftsmanship
+
+# Ethnic group specific terms (for advanced analysis)
+ethnic_specific:
+  Miao:
+    zh: [马尾绣, 银角, 百鸟衣, 蝴蝶妈妈]
+    en: [horse tail embroidery, silver horn headdress, hundred bird garment]
+
+  Dong:
+    zh: [侗锦, 亮布, 鼓楼图案, 风雨桥]
+    en: [Dong brocade, shiny cloth, drum tower pattern, wind-rain bridge]
+
+  Yi:
+    zh: [彝绣, 火把节服饰, 英雄结, 披毡]
+    en: [Yi embroidery, torch festival costume, hero knot, felt cloak]
+
+  Li:
+    zh: [黎锦, 双面绣, 筒裙, 龙被]
+    en: [Li brocade, double-sided embroidery, tube skirt, dragon quilt]
+
+  Tibetan:
+    zh: [藏袍, 氆氇, 邦典, 哈达, 唐卡图案, 绿松石, 珊瑚, 天珠]
+    en: [Tibetan robe, pulu wool, bangdian apron, khata scarf, thangka pattern, turquoise, coral, dzi bead]

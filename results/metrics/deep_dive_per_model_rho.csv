@@ -1,0 +1,11 @@
+model,prompt_lang,rho_zh_bytes,p_one_tailed_exact_zh_bytes,rho_en_bytes,rho_zh_views
+claude-haiku-4.5,zh,0.0,0.525,0.3,0.3
+claude-haiku-4.5,en,0.6,0.175,0.1,0.5
+gpt-4o-mini,zh,1.0,0.0083,0.7,0.7
+gpt-4o-mini,en,1.0,0.0083,0.7,0.7
+llama-3.2-vision-11b,zh,1.0,0.0083,0.7,0.7
+llama-3.2-vision-11b,en,0.975,0.0167,0.667,0.667
+qwen2-vl-7b,zh,1.0,0.0083,0.7,0.7
+qwen2-vl-7b,en,0.9,0.0417,0.6,0.6
+qwen2.5-vl-7b,zh,0.8,0.0667,0.7,0.3
+qwen2.5-vl-7b,en,1.0,0.0083,0.7,0.7

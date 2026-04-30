@@ -1,0 +1,102 @@
+{
+  "data": [
+    {
+      "ethnic_group": "Miao",
+      "bytes_en": 365745,
+      "images_en": 35,
+      "views_60d_en": 32113,
+      "bytes_zh": 619514,
+      "images_zh": 90,
+      "views_60d_zh": 10128,
+      "mean_accuracy": 0.8241666666666667,
+      "mean_acc_en": 0.9306666666666666,
+      "mean_acc_zh": 0.7176666666666667
+    },
+    {
+      "ethnic_group": "Dong",
+      "bytes_en": 186645,
+      "images_en": 0,
+      "views_60d_en": 1107,
+      "bytes_zh": 328613,
+      "images_zh": 17,
+      "views_60d_zh": 2894,
+      "mean_accuracy": 0.13599999999999998,
+      "mean_acc_en": 0.06033333333333333,
+      "mean_acc_zh": 0.21166666666666661
+    },
+    {
+      "ethnic_group": "Yi",
+      "bytes_en": 369101,
+      "images_en": 45,
+      "views_60d_en": 29849,
+      "bytes_zh": 456327,
+      "images_zh": 39,
+      "views_60d_zh": 19119,
+      "mean_accuracy": 0.16066666666666665,
+      "mean_acc_en": 0.10599999999999996,
+      "mean_acc_zh": 0.21533333333333332
+    },
+    {
+      "ethnic_group": "Li",
+      "bytes_en": 185161,
+      "images_en": 0,
+      "views_60d_en": 2113,
+      "bytes_zh": 219323,
+      "images_zh": 13,
+      "views_60d_zh": 2412,
+      "mean_accuracy": 0.020833333333333308,
+      "mean_acc_en": 0.013666666666666641,
+      "mean_acc_zh": 0.02799999999999998
+    },
+    {
+      "ethnic_group": "Tibetan",
+      "bytes_en": 396674,
+      "images_en": 0,
+      "views_60d_en": 14735,
+      "bytes_zh": 522306,
+      "images_zh": 49,
+      "views_60d_zh": 7458,
+      "mean_accuracy": 0.6403333333333333,
+      "mean_acc_en": 0.602,
+      "mean_acc_zh": 0.6786666666666666
+    }
+  ],
+  "correlations": {
+    "bytes_en": {
+      "spearman_rho": 0.7,
+      "spearman_p": 0.1881204043741873,
+      "pearson_r": 0.7263148869400143,
+      "pearson_p": 0.1646359677176351
+    },
+    "bytes_zh": {
+      "spearman_rho": 0.9999999999999999,
+      "spearman_p": 1.4042654220543672e-24,
+      "pearson_r": 0.9086452368627762,
+      "pearson_p": 0.032687985314044835
+    },
+    "images_en": {
+      "spearman_rho": 0.4472135954999579,
+      "spearman_p": 0.45018485575210093,
+      "pearson_r": 0.2412653276964607,
+      "pearson_p": 0.6958182094755091
+    },
+    "images_zh": {
+      "spearman_rho": 0.9999999999999999,
+      "spearman_p": 1.4042654220543672e-24,
+      "pearson_r": 0.9215438020943909,
+      "pearson_p": 0.026067337424415134
+    },
+    "views_60d_en": {
+      "spearman_rho": 0.7999999999999999,
+      "spearman_p": 0.10408803866182788,
+      "pearson_r": 0.5964421548533613,
+      "pearson_p": 0.28838699642857374
+    },
+    "views_60d_zh": {
+      "spearman_rho": 0.7,
+      "spearman_p": 0.1881204043741873,
+      "pearson_r": 0.17340258686179172,
+      "pearson_p": 0.7803284481327797
+    }
+  }
+}

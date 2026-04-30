@@ -1,0 +1,37 @@
+{
+  "title": "Iconic-Group Bias in Vision-Language Models: predictions, metrics, and salience snapshots",
+  "description": "<p>Per-image classification predictions (Task 1; 30,000 records across five vision-language models and two prompt languages), per-image description outputs (Task 2; 5,000 records), per-cell aggregated metrics, a six-proxy Wikipedia salience snapshot, and 150 expert-rating records from the human-evaluation sub-study, supporting the paper <em>Iconic-Group Bias in Vision-Language Models: How Salience Gradients Render Chinese Ethnic Minority Cultures Invisible</em> (AI &amp; Society, under review). The full source code for the evaluation pipeline is at the GitHub repository linked below; the 3,000 source images that constitute the benchmark are not redistributed for representational-harm reasons documented in the paper and the included DATASHEET.md.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "[LAST], [FIRST]",
+      "affiliation": "[Department], [Institution]",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "vision-language models",
+    "cultural bias",
+    "representational harm",
+    "Chinese ethnic minorities",
+    "salience bias",
+    "VLM evaluation",
+    "AI fairness",
+    "cultural heritage",
+    "benchmark"
+  ],
+  "communities": [
+    {"identifier": "ai-and-society"}
+  ],
+  "related_identifiers": [
+    {
+      "scheme": "doi",
+      "identifier": "10.XXXX/XXXXXX",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    }
+  ],
+  "notes": "This deposit covers the derived data and the analysis-pipeline source code archived at the GitHub release tag corresponding to the paper. Per-image source URLs and integrity hashes for the 3,000-image benchmark itself are included via the bundled DATASHEET.md; the raw images are intentionally not redistributed."
+}

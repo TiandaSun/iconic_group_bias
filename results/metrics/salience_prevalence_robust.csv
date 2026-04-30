@@ -1,0 +1,7 @@
+proxy,spearman_rho,p_one_tailed_exact,p_two_tailed_exact,p_one_holm,p_two_holm,loglinear_beta,loglinear_r2,loglinear_r2_loo,jackknife_min_rho,jackknife_max_rho
+bytes_en,0.7,0.1167,0.2333,0.35,0.7,4.267,0.603,-0.034,0.4,1.0
+bytes_zh,1.0,0.0083,0.0167,0.05,0.1,4.901,0.895,0.775,1.0,1.0
+images_en,0.447,0.25,0.5,0.35,0.7,0.422,0.161,-1.418,0.211,0.775
+images_zh,1.0,0.0083,0.0167,0.05,0.1,2.601,0.867,0.703,1.0,1.0
+views_60d_en,0.8,0.0667,0.1333,0.2667,0.5333,0.938,0.469,-0.57,0.6,0.8
+views_60d_zh,0.7,0.1167,0.2333,0.35,0.7,1.376,0.313,-1.681,0.4,1.0
