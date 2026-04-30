@@ -1,13 +1,20 @@
 cff-version: 1.2.0
-message: "The paper accompanying this repository is currently under peer review at AI & Society. Final citation guidance (article DOI and Zenodo DOIs) will be added once issued."
-title: "Iconic-Group Bias in Vision-Language Models — code and data"
+message: "If you use this software or the accompanying data, please cite the Zenodo deposit below. The article citation (AI & Society) will be added once the paper DOI is issued."
+title: "Iconic-Group Bias in Vision-Language Models: predictions, metrics, and salience snapshots"
 type: software
 authors:
-  - family-names: "[LAST]"
-    given-names: "[FIRST]"
-    affiliation: "[Department], [Institution]"
+  - family-names: "Peng"
+    given-names: "Tianxiao"
+    affiliation: "University of Southampton"
+  - family-names: "Sun"
+    given-names: "Tianda"
+    affiliation: "University of York"
 license: MIT
 url: "https://github.com/TiandaSun/iconic_group_bias"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19921543
+    description: "Zenodo deposit (code, predictions, metrics, salience snapshot, human-evaluation ratings)"
 keywords:
   - vision-language models
   - cultural bias
